@@ -14,7 +14,7 @@ public class Test {
 		int b = temp.getOb().getY(); // to get value of Y from B class
 		
 		int c = a+b;
-		System.out.println(c);
+		System.out.println("Addition of "+a+" and "+b+" equal to "+c);
 
 	}
 

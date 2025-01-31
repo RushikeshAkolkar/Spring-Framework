@@ -11,10 +11,13 @@
 <bean class="com.springcore.ref.B" name="bref">
 <property name="y" value="90"/>
 </bean>
-<bean class="com.springcore.ref.A" name="aref">
+
+<!--<bean class="com.springcore.ref.A" name="aref">
 	<property name="x" value="40"/>
 	<property name="ob">
 	<ref bean="bref"/>
-	</property>
-</bean>
+	<property name="ob" ref="bref"/>
+</bean>-->
+	<!--using p schema-->
+	<bean class="com.springcore.ref.A" name="aref" p:x="33" p:ob-ref="bref"/>
 </beans>
