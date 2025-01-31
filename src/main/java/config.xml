@@ -19,5 +19,8 @@
 <value>Maharashtra</value>
 </property>
 </bean>
-                           
+
+<!--using p schema-->
+<bean class="com.the.Demo.STudent" name="stud" p:sid="2" p:name="rishikesh" p:address="Pune"/>               
+
 </beans>
