@@ -17,4 +17,9 @@
 <value>7737</value>
 </constructor-arg>
 </bean>
+
+<bean class="com.springcore.construtorInjection.Addition" name="addition">
+<constructor-arg value="12" type="int"/>
+<constructor-arg value="13" type="int"/>
+</bean>
 </beans>
