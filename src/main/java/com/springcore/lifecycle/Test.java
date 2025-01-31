@@ -15,19 +15,24 @@ public class Test {
 		 */
 		
 		//we require pre shoutdown hook to enable to call destroy method
-		/*
-		 * AbstractApplicationContext context = new
-		 * ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml"); Samosa
-		 * s = (Samosa) context.getBean("samosa"); System.out.println(s); //registring
-		 * shutdown hook context.registerShutdownHook();
-		 * System.out.println("+++++++++++++++++++++++++++++++++++++++++");
-		 */
-		AbstractApplicationContext context = new
-				 ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
+		// ClassPathApplicationContext does not have registerShutdownHook() method of Bean LifeCycle Method
+		
+		 AbstractApplicationContext context = new
+		 ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml"); Samosa
+		 s = (Samosa) context.getBean("samosa"); 
+		 //System.out.println(s); 
+		 context.registerShutdownHook();
+		 System.out.println("+++++++++++++++++++++++++++++++++++++++++");
+		
+		
 		Pepsi p1 = (Pepsi) context.getBean("p1");
-		System.out.println(p1);
-		context.registerShutdownHook();
+		//System.out.println(p1);
 		//no need to initand destry method in cofig.xml
+		context.registerShutdownHook();
+		
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++");
+		Example e1 = (Example) context.getBean("example");
+		System.out.println(e1);
 	}
 
 }

@@ -29,6 +29,12 @@
     <artifactId>spring-context</artifactId>
     <version>5.2.3.RELEASE</version>
 </dependency>
+<!--this dependacy we used for @PostContruct and @PreConstruct annotation . this annotation used for jee applications and this was debricated  in 9 + version of java -->
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
 
     <dependency>
       <groupId>junit</groupId>
