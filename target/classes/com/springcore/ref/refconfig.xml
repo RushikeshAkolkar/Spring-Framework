@@ -8,19 +8,13 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
-<bean class="com.the.Demo.STudent" name="student">
-<property name="sid">
-<value>1122</value>
-</property>
-<property name="name">
-<value>Rushikesh Babasaheb Akolkar</value>
-</property>
-<property name="address">
-<value>Maharashtra</value>
-</property>
+<bean class="com.springcore.ref.B" name="bref">
+<property name="y" value="90"/>
 </bean>
-
-<!--using p schema-->
-<bean class="com.the.Demo.STudent" name="stud" p:sid="2" p:name="rishikesh" p:address="Pune"/>               
-
+<bean class="com.springcore.ref.A" name="aref">
+	<property name="x" value="40"/>
+	<property name="ob">
+	<ref bean="bref"/>
+	</property>
+</bean>
 </beans>
