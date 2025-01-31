@@ -8,9 +8,15 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
-<bean class="com.springcore.lifecycle.Samosa" name="samosa" init-method="init" 
+<!--<bean class="com.springcore.lifecycle.Samosa" name="samosa" init-method="init" 
 destroy-method="destroy">
 <property name="price" value="10.5"/>
-</bean>             
+</bean>         -->
+
+<bean class="com.springcore.lifecycle.Pepsi" name="p1">
+<property name="pepsi">
+<value>30</value>
+</property>
+</bean>    
 
 </beans>
