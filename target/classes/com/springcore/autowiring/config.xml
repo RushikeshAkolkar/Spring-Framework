@@ -9,7 +9,7 @@
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-<bean class="com.springcore.autowiring.Address" name="address1">
+<bean class="com.springcore.autowiring.Address" name="address">
 
 <property name="street" value="Pipeline Road"/>
 <property name="city" value="Ahilyanagar"/>

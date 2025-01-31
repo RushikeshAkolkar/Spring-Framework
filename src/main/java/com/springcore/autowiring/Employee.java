@@ -1,5 +1,7 @@
 package com.springcore.autowiring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Employee {
 	
 	private Address address;//variable name in class file and config.xml file should by same for using autowiring byName
@@ -16,7 +18,6 @@ public class Employee {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
 	public Employee(Address address) {
 		super();
 		this.address = address;
