@@ -1,10 +1,9 @@
-package com.springcore.autowiring;
-
+package com.springcore.autowiring.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Employee {
-	
+	@Autowired
 	private Address address;//variable name in class file and config.xml file should by same for using autowiring byName
 
 	public Address getAddress() {
