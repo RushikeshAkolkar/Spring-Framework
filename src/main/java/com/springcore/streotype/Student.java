@@ -3,9 +3,11 @@ package com.springcore.streotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("Stud")				//give Bean Name 
+@Scope("prototype")				//different object has been created otherwise same object created. check by using .hashCode() method
 public class Student {
 	@Value("Rushikesh Akolkar")
 	private String name;
