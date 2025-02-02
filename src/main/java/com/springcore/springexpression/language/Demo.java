@@ -13,7 +13,15 @@ public class Demo {
 	private double z;
 	@Value("#{T(java.lang.Math).PI}")		// access static variable value
 	private double e;
+	@Value("#{new java.lang.String('Rushiikesh Akolkar')}")
+	private String name;
 	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public double getE() {
 		return e;
 	}
@@ -40,7 +48,7 @@ public class Demo {
 	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + "]";
 	}
 	
 	
